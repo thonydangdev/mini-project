@@ -13,12 +13,12 @@ function runAnimation() {
                 num.nextElementSibling.classList.add('in')
             } else {
                 container.classList.remove('count')
-                resetDOM()
             }
         })
     })
 }
 function resetDOM() {
+    container.classList.add('count')
     nums.forEach(num => {
         num.className = ''
     })
@@ -26,6 +26,5 @@ function resetDOM() {
 }
 btnPlay.addEventListener('click', function () {
     resetDOM()
-    container.classList.add('count')
     runAnimation()
 })
