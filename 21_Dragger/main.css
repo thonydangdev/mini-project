@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    --primary-color: #111;
+    --secondary-color: #fff;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100vw;
+    height:100vh;
+    transition: 0.5s;
+    background-color: steelblue;
+}
+.drag-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    height:100%;
+}
+.drag-zone{
+    position: relative;
+    height:150px;
+    width: 150px;
+    background-color:#fff;
+    border: 4px solid #000;
+    margin: 0 10px;
+}
+.drag-item{
+    height:142px;
+    width:142px;
+    background-image: url('https://static.independent.co.uk/2021/12/07/10/PRI213893584.jpg?quality=75&width=982&height=726&auto=webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hold{
+    border:  solid 5px #ccc;
+}
+.hovered {
+    background-color: #333;
+    border-color: white;
+    border-style: dashed;
+  }
+

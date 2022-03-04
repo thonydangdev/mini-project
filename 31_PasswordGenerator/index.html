@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="../fonts/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <main class="main">
+        <h2>Password Generator</h2>
+        <div class="result__container">
+            <div class="result"></div>
+            <button class="btn copy"><i class="fas fa-copy"></i></button>
+        </div>
+        <div class="inputBox">
+            <div class="input__item">
+                <label for="length" class="input__title">Password Length</label>
+                <input type="number" id="length" value=6 min="6" max="20" step="1" name="length">
+            </div>
+            <div class="input__item">
+                <label for="upper" class="input__title">Include uppercase letters</label>
+                <input type="checkbox" id="upper" value="upper" name="upper" checked>
+            </div>
+            <div class="input__item">
+                <label for="lower" class="input__title">Include lowercase letters</label>
+                <input type="checkbox" id="lower" value="lower" name="lower" checked>
+
+            </div>
+            <div class="input__item">
+                <label for="number" class="input__title">Include numbers</label>
+                <input type="checkbox" id="number" value="number" name="number" checked>
+
+            </div>
+            <div class="input__item">
+                <label for="symbols" class="input__title">Include symbols</label>
+                <input type="checkbox" id="symbols" value="symbols" name="symbols" checked>
+            </div>
+            <button class="btn btn-create">Generate Password</button>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
+        integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

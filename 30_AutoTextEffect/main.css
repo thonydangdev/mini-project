@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --primary-color: #2a2a72;
+  --secondary-color: #4c2885;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  background-color: darksalmon;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.text{
+  font-weight: bold;
+  font-size:40px;
+}
+.boxInput{
+  position:absolute;
+  left:50%;
+  bottom:0;
+  transform:translate(-50%,0);
+  margin-bottom:16px;
+  background-color:rgba(0,0,0,0.05);
+  padding:12px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  font-size:20px;
+}
+.boxInput input{
+  width:40px;
+  padding-left:5px;
+}

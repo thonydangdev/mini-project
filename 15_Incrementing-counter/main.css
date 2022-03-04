@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    --line-border-empty: #e0e0e0;
+    --line-border-filled: #3498db;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    background-color: #8e44ad;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden; 
+    height:100vh;
+    color: #fff;
+    width: 100vw;
+}
+.counter-box{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:30px 50px;
+}
+.counter-icon{
+    font-size:48px;
+
+}
+.counter-num{
+    font-size:60px;
+    margin:15px 0;
+    box-sizing: border-box;
+
+}
+.counter-title{
+    letter-spacing:2px;
+    font-size:16px;
+    font-weight: 500;
+
+}

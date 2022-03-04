@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    --primary-color: #111;
+    --secondary-color: #fff;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100vw;
+    height:100vh;
+    transition: 0.5s;
+}
+body.dark{
+    background-color:var(--primary-color);
+    color:var(--secondary-color);
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    flex-direction: column;
+    height:100%;
+    width: 100%;
+
+}
+.box-change{
+    height:250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding:8px;
+    border:0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+    background-color:var(--primary-color);
+    color:var(--secondary-color);
+    cursor: pointer;
+}
+body.dark .btn{
+    background-color:var(--secondary-color);
+    color:var(--primary-color);
+}
+.btn:hover{
+    opacity:0.8;
+}
+
+.clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:40vh;
+
+}
+.clock{
+    width:100%;
+    position: relative;
+    flex:1;
+}
+.needle{
+    position: absolute;
+    width:3px;
+    top:50%;
+    left:50%;
+    transform-origin: bottom center;
+    transition: 0.5s ease-in;
+    background-color: var(--primary-color);
+}
+body.dark .needle{
+    background-color: var(--secondary-color);
+}
+
+
+.needle.needle-hour{
+    height:65px;
+    transform: translate(-50%,-100%) rotate(0deg);
+}
+.needle.needle-minute{
+    height:100px;
+    transform: translate(-50%,-100%) rotate(0deg);
+}
+body .clock .needle.needle-second{
+    height:100px;
+    background-color: #e74c3c;
+    transform: translate(-50%,-100%) rotate(0deg);
+
+}
+.center-point,
+.center-point::after{
+    position:absolute;
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+.center-point{
+    width:8px;
+    height:8px;
+    background-color: #e74c3c;
+    transform: translate(-50%,-50%);
+}
+.center-point::after{
+    content: '';
+    width:4px;
+    height:4px;
+    background-color:var(--primary-color);
+}
+body.dark .center-point::after{
+    background-color: var(--secondary-color);
+}
+
+.time{
+    font-size:60px;
+    font-weight: 300;
+}
+.date{
+    color:#aaa;
+}
+
+span.circle{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding:3px;
+    border-radius:50%;
+}
+body.dark .date span.circle{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+}

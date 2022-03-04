@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    --line-border-empty: #e0e0e0;
+    --line-border-filled: #3498db;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    background-color: #eafbff;
+    background-image: linear-gradient(to bottom, #eafbff 0%, #eafbff 50%, #5290f9 50%, #5290f9 100%);
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden; 
+    height:100vh;
+    color: #fff;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color:#fff;
+    width:80px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius:4px;
+    transition: all 0.6s linear;
+    box-sizing: border-box;
+    transition: width 0.6s linear;
+    overflow: hidden;
+}
+nav.active{
+    width: 350px;
+}
+
+
+
+.listmenu{
+    height:20px;
+    list-style: none;
+    display:flex;
+    width:0;
+    align-items: center;
+    justify-content:flex-start;
+    transition: width 0.6s ease-in;
+}
+
+
+.listmenu li{
+    margin: 0 10px;
+    transition: all 0.6s ease-in;
+    transform:translateX(200px) rotateY(360deg) scale(0);
+    width: 100%;
+}
+.list-item {
+    text-decoration: none;
+    color:#000;
+}
+#navigation.active .listmenu{
+    width:100%;
+}
+#navigation.active li{
+    opacity: 1;
+    transform:translateX(0) rotateY(0) scale(1);
+
+
+}
+.icon{
+    position: relative;
+    border:0;
+    background-color:transparent;
+    height:30px;
+    width:30px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.icon:hover{
+    opacity: 0.2;
+}
+.line{
+    position: absolute;
+    height:2px;
+    width:20px;
+    background-color:#5290f9;
+    transition: transform 0.6s linear;
+    top: 15px;
+    right: -5px;
+}
+.line1{
+    transform:rotate(360deg) translateY(5px) translateX(-10px);
+    opacity:0.7;
+}
+.line2{
+    transform:rotate(-360deg) translateY(-5px) translateX(-10px);
+    opacity:0.7;
+}
+#navigation.active .line1{
+    transform:rotate(-765deg);
+}
+#navigation.active .line2{
+    transform:rotate(765deg);
+}

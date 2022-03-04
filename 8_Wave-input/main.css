@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    --line-border-empty: #e0e0e0;
+    --line-border-filled: #3498db;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    background-color: steelblue;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden; 
+    height:100vh;
+    color: #fff;
+}
+.container{
+    padding:20px 40px;
+    background-color:#2a4e6c;
+    border-radius:5px;
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-login h1{
+    margin: 22px 0 30px;
+    font-weight:600;
+    font-size:32px;
+}
+.form-item{
+    width: 300px;
+  font-size:20px;
+  font-weight:300;
+  position: relative;
+  margin:20px 0 40px 0;
+
+}
+.form-item:nth-of-type(2){
+    margin-top:0;
+}
+
+.form-item label{
+    position:absolute;
+    top:15px;
+    left:0;
+}
+.form-item input{
+    width:100%;
+    padding:15px 0;
+    display:block;
+    background-color:transparent;
+    outline:none;
+    border:0;
+    border-bottom: 2px solid #fff;
+}
+
+.form-login a {
+    text-decoration: none;
+}
+.form-login .btn{
+    box-sizing: border-box;
+    width:100%;
+    padding:15px;
+    background-color:#ADD8E6;
+    color:#000;
+    text-align: center;
+    border-radius:5px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+.btn:focus {
+    outline: 0;
+}
+.btn:active {
+    transform: scale(0.98);
+}
+.form-login p{
+    margin: 30px 0 16px 0;
+    align-self: flex-start;
+}
+.form-login p .register{
+    color:#a6cfd6;
+}
+
+.form-item input:focus{
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+.form-item label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-item input:focus + label span,
+.form-item input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}

@@ -1,0 +1,45 @@
+*{
+    padding:0;
+    margin:0;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 90vw;
+    display:flex;
+    
+}
+.panel{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    flex: 0.5;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+.panel h3{
+    position:absolute;
+    font-size:24px;
+    bottom: 0;
+    left:33px;
+    opacity:0;
+}
+.panel.active{
+    flex:5;
+}
+.panel.active h3{
+    opacity: 1;
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --primary-color: #2a2a72;
+  --secondary-color: #4c2885;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: #3b3b98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.main{
+  min-width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #23235b;
+  box-shadow: 1px 1px 10px #777;
+  color:#fff;
+  padding:20px;
+}
+.main h2{
+  font-size:30px;
+  margin-bottom: 20px;
+}
+.result__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.4);
+  width: 100%;
+  height:56px;
+  padding:12px 8px;
+  border-radius:4px;
+  margin-bottom: 12px;
+}
+.result{
+  flex:1;
+  font-size:24px;
+}
+.btn{
+  cursor:pointer;
+  padding:8px 12px;
+  border:0;
+  color:#fff;
+  background-color: #3b3b98;
+}
+.copy{
+  width:40px;
+  height:40px;
+}
+.inputBox{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+}
+.input__item{
+  margin:12px 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.input__title{
+
+}
+.length{
+}
