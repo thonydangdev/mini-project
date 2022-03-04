@@ -20,9 +20,11 @@ body {
   color:#000;
 }
 .switch__box{
+  margin-top:20px;
   display:flex;
   align-items: center;
   height:65px;
+  width: 200px;
 }
 .label{
   margin:0 12px;
