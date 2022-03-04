@@ -2,23 +2,26 @@ const switchBoxs = document.querySelectorAll('.switch__box');
 const switchActive = [];
 
 switchBoxs.forEach(switchBox => {
+    //Tạo tên cho các box khi vào Array
     const name = switchBox.querySelector('label').id
     switchBox.addEventListener('click', function () {
         if (!switchBox.classList.contains('active')) {
             switchActive.push(name)
             switchBox.classList.add('active')
         } else {
+            //Xóa phần tử với tên tương ứng trong Array active
             switchActive.splice(switchActive.findIndex((target) => target == name), 1)
             switchBox.classList.remove('active')
         }
         balanceControl()
-        console.log(switchActive)
 
 
 
     })
 })
+
 function balanceControl() {
+    // Phụ thuộc vào phần tử cuối là ai mà ta sẽ remove active theo đó
     const switch3 = switchActive[2]
     if (switchActive.length > 2) {
         switch (switch3) {
