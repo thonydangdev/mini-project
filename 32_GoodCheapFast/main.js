@@ -1,0 +1,1 @@
+const dkoaekd = document.querySelector('.switch__box')
