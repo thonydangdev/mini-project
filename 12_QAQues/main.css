@@ -87,11 +87,12 @@ body h1{
 
 .faq-title i.iconclose{
     color:#888;
-}
-.faq-title .btn.close .iconclose{
     display:none;
 }
-.faq-title .btn.open .iconopen{
+.faq-item.active .btn .iconclose{
+    display:block;
+}
+.faq-item.active .btn .iconopen{
     display:none;
 }
 .faq-answer{
