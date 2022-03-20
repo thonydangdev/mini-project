@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height:100vh;
+}
+.container{
+  width:400px;
+  border:0;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  padding:30px;
+}
+.form-submit{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  width:100%;
+}
+.feedback{
+  display: flex;
+  margin:30px 0;
+  align-items: center;
+  width: 100%;
+}
+.feedback-style{
+  flex:1;
+  margin:10px 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  cursor: pointer;
+}
+.feedback-style .feedback-icon{
+  position: relative;
+  margin-bottom: 10px;
+}
+.feedback-style,
+.fb-title{
+  transition:transform 0.5s linear, color 1s,font-weight 0.8s;
+}
+.feedback-style.active,
+.feedback-style:hover{
+  transform: translateY(-10px);
+}
+.feedback-style.active,
+.feedback-style:hover .fb-title{
+  color:red;
+  font-weight: 600;
+}
+
+.feedback-style .feedback-icon::after{
+  position: absolute;
+  content:"";
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  background-color:currentColor;
+  opacity:0.2;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+.feedback-style.unhappy .feedback-icon{
+  color:rgb(11, 31, 24);
+}
+
+.feedback-style.neutral .feedback-icon{
+  color:rgb(152, 209, 190);
+}
+
+.feedback-style.satisfied .feedback-icon{
+  color:rgb(248, 10, 10);
+}
+.btn{
+  padding:16px 24px;
+  color:#fff;
+  background-color:#333;
+  border:0;
+  border-radius:10px;
+  min-width:150px;
+  font-size:15px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing:3px;
+  transition:all 0.5s;
+  
+}
+.btn:hover{
+  opacity:0.8;
+}
+.thankyou{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+.thankyou i{
+  color:red;
+  font-size:24px;
+}
+.thankyou span{
+  font-weight: 600;
+  margin:14px 0;
+  color:#000;
+}
+.thankyou p{
+  text-align:center;
+  font-size: 15px;
+  color:#333;
+}
+
+
+
