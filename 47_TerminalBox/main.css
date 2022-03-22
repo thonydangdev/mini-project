@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  font-family: 'Muli', sans-serif;
+  position: relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width: 100vw;
+  height:100vh;
+}
+.container{
+  max-width:768px;
+  background-color:#476ce4;
+  color:#fff;
+  border-radius:10px;
+  padding:50px 80px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  position: relative;
+ 
+}
+.container .progress-bar{
+  position: relative;
+  height:10px;
+  width:100%;
+}
+.container .loading{
+  width:100%;
+  appearance: none;
+  background-color:#476ce4;
+  height:5px;
+  position:absolute;
+}
+.container .progress-access{
+  transition: width 0.1s linear;
+  position: absolute;
+  width:50%;
+  height:5px;
+  background-color:#fff;
+}
+.container .loading::-webkit-slider-thumb{
+  appearance: none;
+}
+.quote{
+  font-size:28px;
+  color:rgba(0, 0, 0, 0.15);
+  width:30px;
+  height:30px;
+  margin:0 10px;
+  position:absolute;
+}
+.quote-left{
+  top:70px;
+  right:30px;
+}
+.quote-right{
+  top: 70px;
+  left: 30px;
+}
+.quote-content{
+  width:100%;
+  margin-top:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  
+}
+.quote-content p{
+  margin-bottom:20px;
+  text-align:justify;
+  line-height:32px;
+  font-size:18px;
+}
+.quote-author{
+  display:flex;
+  align-items: center;
+}
+.quote-author img{
+  width:100px;
+  height:100px;
+  margin-right:10px;
+  object-fit:cover;
+  border-radius: 50%;
+}
+.author-name{
+  margin-bottom: 16px;
+}
+@media (max-width: 768px){
+  .container{
+    padding:50px 40px;
+  }
+  .container .quote{
+    display:none;
+  }
+}
+

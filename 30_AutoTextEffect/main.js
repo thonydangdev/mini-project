@@ -22,15 +22,24 @@ let speed = 300 / speedEl.value
 // }
 let textContent = text.innerText
 let cutTotal = 1;
+let isDelete = false;
 typeEffect()
 function typeEffect() {
-    text.innerText = textContent.slice(0, cutTotal)
-    ++cutTotal
-    if (cutTotal == textContent.length + 1) {
-        cutTotal = 1;
-        setTimeout(typeEffect, speed + 1000)
+    if (isDelete) {
+        text.innerText = textContent.slice(0, cutTotal)
+        --cutTotal
+        if (cutTotal == 0) {
+            isDelete = false
+        }
     } else {
-        setTimeout(typeEffect, speed)
+        text.innerText = textContent.slice(0, cutTotal)
+        ++cutTotal
+        if (cutTotal == textContent.length + 1) {
+            isDelete = true
+        }
     }
+    setTimeout(typeEffect, speed + 100)
+
+
 }
 speedEl.addEventListener('input', (e) => speed = 300 / e.target.value)

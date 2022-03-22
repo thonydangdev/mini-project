@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="../fonts/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div class="container" id="quiz">
+        <div class="quiz-container">
+            <h2 class="question">Which language runs in a web browser?</h2>
+            <ul class="answer">
+                <li><input type="radio" name="answer" id="answerA" value="false"><label for="answerA"
+                        class="choice value">Java</label></li>
+                <li><input type="radio" name="answer" id="answerB" value="false"><label for="answerB"
+                        class="choice value">C</label></li>
+                <li><input type="radio" name="answer" id="answerC" value="false"><label for="answerC"
+                        class="choice value">Python</label></li>
+                <li><input type="radio" name="answer" id="answerD" value="true"><label for="answerD"
+                        class="choice value">JavaScript</label>
+                </li>
+            </ul>
+        </div>
+        <button class="btn btn-submit">Submit</button>
+        <button class="btn btn-reload">Reload</button>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
+        integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
